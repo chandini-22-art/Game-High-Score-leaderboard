@@ -2,29 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Speed Typing Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Leaderboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>⌨ Speed Typing Test</h1>
+    <h1>🏆 High Score Leaderboard</h1>
 
-    <p id="text">
-        Practice makes a person perfect in typing skills.
-    </p>
-
-    <textarea id="input" placeholder="Start typing here..."></textarea>
-
-    <div class="info">
-        <p>Time: <span id="time">60</span>s</p>
-        <p>WPM: <span id="wpm">0</span></p>
+    <div class="input-box">
+        <input type="text" id="name" placeholder="Player Name">
+        <input type="number" id="score" placeholder="Score">
+        <button onclick="addScore()">Add Score</button>
     </div>
 
-    <button onclick="restartTest()">Restart</button>
+    <div class="leaderboard">
+        <h2>Top Players</h2>
+        <ul id="leaderboard"></ul>
+    </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
